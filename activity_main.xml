@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/tvStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAttendanceStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21 / 28"
+            android:textColor="@android:color/black"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75.0%"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnScanTimetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📸 CAMERA SCAN" />
+
+    <Button
+        android:id="@+id/btnGalleryUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🖼️ UPLOAD FROM GALLERY"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/darker_gray" />
+
+
+</LinearLayout>
